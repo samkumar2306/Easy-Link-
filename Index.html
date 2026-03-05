@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Link - Smart Rural E-Commerce</title>
+  <link rel="icon" href="icons/Easylink logo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#" class="brand">
+        <span class="brand-mark"></span>
+        <span>Easy Link</span>
+      </a>
+
+      <form class="search" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Search for products, groceries, vegetables, clothes and more" aria-label="Search products" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="actions">
+        <button class="action-btn primary">Login</button>
+        <button class="action-btn">Become a Seller</button>
+        <button class="action-btn">More</button>
+        <button class="action-btn" id="openCartBtn">Cart <span class="cart-count" id="cartCount">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="category-strip">
+    <nav class="category-inner">
+      <a class="cat-item" href="#"><span class="cat-icon">&#128722;</span><span>Groceries</span></a>
+      <a class="cat-item" href="#"><span class="cat-icon">&#129365;</span><span>Vegetables</span></a>
+      <a class="cat-item" href="#"><span class="cat-icon">&#128091;</span><span>Clothes</span></a>
+      <a class="cat-item" href="#"><span class="cat-icon">&#129367;</span><span>Staples</span></a>
+      <a class="cat-item" href="#"><span class="cat-icon">&#129531;</span><span>Home Care</span></a>
+      <a class="cat-item" href="#"><span class="cat-icon">&#128241;</span><span>Mobiles</span></a>
+      <a class="cat-item" href="#"><span class="cat-icon">&#128142;</span><span>Beauty</span></a>
+      <a class="cat-item" href="#"><span class="cat-icon">&#128267;</span><span>Appliances</span></a>
+    </nav>
+  </div>
+
+  <main class="page">
+    <section class="hero">
+      <div class="slider" id="slider">
+        <div class="slider-track" id="sliderTrack">
+          <article class="slide">
+            <img src="https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Grocery bags and essentials" />
+            <div class="slide-overlay">
+              <b>Village Essentials</b>
+              <h2>Big Savings on Daily Groceries</h2>
+              <p>Rice, atta, oil, pulses and household products delivered at affordable rates.</p>
+              <a href="#products">Shop Groceries</a>
+            </div>
+          </article>
+          <article class="slide">
+            <img src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Fresh vegetables at local market" />
+            <div class="slide-overlay">
+              <b>Fresh Picks</b>
+              <h2>Farm Fresh Vegetables Every Morning</h2>
+              <p>Tomato, onion, potato and leafy vegetables sourced from trusted farmers.</p>
+              <a href="#products">Shop Vegetables</a>
+            </div>
+          </article>
+          <article class="slide">
+            <img src="https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Affordable family fashion" />
+            <div class="slide-overlay">
+              <b>Family Fashion</b>
+              <h2>Affordable Clothes for Everyone</h2>
+              <p>Comfortable and durable daily wear for men, women and kids.</p>
+              <a href="#products">Shop Clothes</a>
+            </div>
+          </article>
+        </div>
+        <div class="slider-dots" id="sliderDots">
+          <button class="active" type="button" aria-label="Slide 1"></button>
+          <button type="button" aria-label="Slide 2"></button>
+          <button type="button" aria-label="Slide 3"></button>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <article class="side-card">
+          <b>Free Delivery</b>
+          <p>On orders above &#8377;499 in selected locations.</p>
+        </article>
+        <article class="side-card">
+          <b>Easy Returns</b>
+          <p>7-day return policy on eligible products.</p>
+        </article>
+        <article class="side-card">
+          <b>Secure Payments</b>
+          <p>UPI, cards, wallets and cash on delivery available.</p>
+        </article>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h3>Deals of the Day</h3>
+      </div>
+      <div class="deals-grid">
+        <a class="deal-card" href="#products"><img src="https://images.pexels.com/photos/5945656/pexels-photo-5945656.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Cooking oil" /><div><span>Cooking Oil Combos</span><b>Up to 22% Off</b></div></a>
+        <a class="deal-card" href="#products"><img src="https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Rice bag" /><div><span>Premium Rice Bags</span><b>From &#8377;599</b></div></a>
+        <a class="deal-card" href="#products"><img src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Men clothes" /><div><span>Men's Daily Wear</span><b>Min 40% Off</b></div></a>
+        <a class="deal-card" href="#products"><img src="https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Women clothes" /><div><span>Women's Daily Wear</span><b>Min 35% Off</b></div></a>
+        <a class="deal-card" href="#products"><img src="https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Vegetable combo" /><div><span>Vegetable Baskets</span><b>From &#8377;249</b></div></a>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-head">
+        <h3>Top Products for You</h3>
+        <div class="chip-row" id="chips">
+          <button class="chip active" type="button" data-filter="All">All</button>
+          <button class="chip" type="button" data-filter="Groceries">Groceries</button>
+          <button class="chip" type="button" data-filter="Vegetables">Vegetables</button>
+          <button class="chip" type="button" data-filter="Clothes">Clothes</button>
+          <button class="chip" type="button" data-filter="Home Care">Home Care</button>
+        </div>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>About Easy Link</h4>
+        <p>Easy Link is a rural-focused e-commerce platform delivering trusted daily products at fair prices.</p>
+      </div>
+      <div>
+        <h4>Customer Support</h4>
+        <p>Help Center</p>
+        <p>Track Orders</p>
+        <p>Returns & Refunds</p>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+        <p>Shipping Policy</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: support@easylink.in</p>
+        <p>Phone: +91 90000 00000</p>
+      </div>
+    </div>
+    <div class="copyright">&#169; 2026 Easy Link. All rights reserved.</div>
+  </footer>
+
+  <div class="backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <span>Your Cart</span>
+      <button id="closeCartBtn" class="action-btn" style="color:#111827;padding:2px 6px;">Close</button>
+    </div>
+    <div class="cart-list" id="cartList"></div>
+    <div class="cart-total">
+      <div id="cartTotal">Total: &#8377;0</div>
+      <button type="button">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <nav class="mobile-bottom">
+    <button type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">Home</button>
+    <button type="button" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Products</button>
+    <button type="button" id="mobileCartBtn">Cart</button>
+    <button type="button">Account</button>
+  </nav>
+
+  <script>
+    const productData = [
+      { id: 1, name: "Groceries Family Pack", category: "Groceries", price: 899, oldPrice: 1099, img: "https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 2, name: "Premium Rice 10kg", category: "Groceries", price: 620, oldPrice: 740, img: "https://images.pexels.com/photos/4110251/pexels-photo-4110251.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 3, name: "Cooking Oil 5L", category: "Groceries", price: 760, oldPrice: 899, img: "https://images.pexels.com/photos/5945656/pexels-photo-5945656.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 4, name: "Fresh Vegetable Basket", category: "Vegetables", price: 249, oldPrice: 320, img: "https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 5, name: "Onion & Potato Combo", category: "Vegetables", price: 199, oldPrice: 260, img: "https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 6, name: "Men Daily Wear Set", category: "Clothes", price: 799, oldPrice: 1199, img: "https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 7, name: "Women Cotton Combo", category: "Clothes", price: 849, oldPrice: 1299, img: "https://images.pexels.com/photos/6311392/pexels-photo-6311392.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 8, name: "Kids T-Shirt Pack", category: "Clothes", price: 499, oldPrice: 699, img: "https://images.pexels.com/photos/5693898/pexels-photo-5693898.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 9, name: "Floor Cleaner 2L", category: "Home Care", price: 189, oldPrice: 249, img: "https://images.pexels.com/photos/4239038/pexels-photo-4239038.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 10, name: "Detergent Value Pack", category: "Home Care", price: 349, oldPrice: 430, img: "https://images.pexels.com/photos/7262913/pexels-photo-7262913.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 11, name: "Atta 10kg", category: "Groceries", price: 430, oldPrice: 520, img: "https://images.pexels.com/photos/4198019/pexels-photo-4198019.jpeg?auto=compress&cs=tinysrgb&w=700" },
+      { id: 12, name: "Seasonal Greens Pack", category: "Vegetables", price: 169, oldPrice: 220, img: "https://images.pexels.com/photos/1656666/pexels-photo-1656666.jpeg?auto=compress&cs=tinysrgb&w=700" }
+    ];
+
+    const formatPrice = (price) => `&#8377;${price}`;
+
+    const productsGrid = document.getElementById("productsGrid");
+    const chips = document.querySelectorAll(".chip");
+    const searchInput = document.getElementById("searchInput");
+    const searchForm = document.getElementById("searchForm");
+
+    let activeFilter = "All";
+    let searchTerm = "";
+    let cart = [];
+
+    function renderProducts() {
+      const filtered = productData.filter((item) => {
+        const matchCategory = activeFilter === "All" || item.category === activeFilter;
+        const matchSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase());
+        return matchCategory && matchSearch;
+      });
+
+      productsGrid.innerHTML = filtered
+        .map(
+          (item) => `
+            <article class="product">
+              <div class="product-image"><img src="${item.img}" alt="${item.name}" /></div>
+              <div class="product-body">
+                <div class="product-name">${item.name}</div>
+                <div class="product-cat">${item.category}</div>
+                <div class="product-price">
+                  <b>&#8377;${item.price}</b>
+                  <s>&#8377;${item.oldPrice}</s>
+                </div>
+                <button type="button" data-id="${item.id}">Add to Cart</button>
+              </div>
+            </article>
+          `
+        )
+        .join("");
+
+      if (!filtered.length) {
+        productsGrid.innerHTML = '<p style="padding:10px;color:#6b7280;">No products found for your search.</p>';
+      }
+
+      productsGrid.querySelectorAll("button[data-id]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const id = Number(btn.dataset.id);
+          const product = productData.find((p) => p.id === id);
+          if (product) {
+            cart.push(product);
+            renderCart();
+          }
+        });
+      });
+    }
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        chips.forEach((c) => c.classList.remove("active"));
+        chip.classList.add("active");
+        activeFilter = chip.dataset.filter;
+        renderProducts();
+      });
+    });
+
+    searchForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      searchTerm = searchInput.value.trim();
+      renderProducts();
+      document.getElementById("products").scrollIntoView({ behavior: "smooth" });
+    });
+
+    const cartDrawer = document.getElementById("cartDrawer");
+    const cartList = document.getElementById("cartList");
+    const cartTotal = document.getElementById("cartTotal");
+    const cartCount = document.getElementById("cartCount");
+    const backdrop = document.getElementById("backdrop");
+
+    function openCart() {
+      cartDrawer.classList.add("open");
+      backdrop.classList.add("show");
+    }
+
+    function closeCart() {
+      cartDrawer.classList.remove("open");
+      backdrop.classList.remove("show");
+    }
+
+    function renderCart() {
+      cartCount.textContent = cart.length;
+      const total = cart.reduce((sum, item) => sum + item.price, 0);
+      cartTotal.innerHTML = `Total: &#8377;${total}`;
+
+      if (!cart.length) {
+        cartList.innerHTML = '<p style="color:#6b7280;">Your cart is empty.</p>';
+        return;
+      }
+
+      cartList.innerHTML = cart
+        .map(
+          (item, index) => `
+            <div class="cart-item">
+              <img src="${item.img}" alt="${item.name}" />
+              <div>
+                <div style="font-weight:600;font-size:0.9rem;">${item.name}</div>
+                <div style="color:#6b7280;font-size:0.82rem;">&#8377;${item.price}</div>
+                <button data-remove="${index}" style="border:none;background:transparent;color:#ef4444;padding:0;font:inherit;font-size:0.8rem;cursor:pointer;">Remove</button>
+              </div>
+            </div>
+          `
+        )
+        .join("");
+
+      cartList.querySelectorAll("button[data-remove]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const idx = Number(btn.dataset.remove);
+          cart.splice(idx, 1);
+          renderCart();
+        });
+      });
+    }
+
+    document.getElementById("openCartBtn").addEventListener("click", openCart);
+    document.getElementById("mobileCartBtn").addEventListener("click", openCart);
+    document.getElementById("closeCartBtn").addEventListener("click", closeCart);
+    backdrop.addEventListener("click", closeCart);
+
+    const sliderTrack = document.getElementById("sliderTrack");
+    const dots = document.querySelectorAll("#sliderDots button");
+    let slideIndex = 0;
+    let sliderTimer;
+
+    function showSlide(index) {
+      const safe = (index + dots.length) % dots.length;
+      slideIndex = safe;
+      sliderTrack.style.transform = `translateX(-${safe * 100}%)`;
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === safe));
+    }
+
+    function startSlider() {
+      clearInterval(sliderTimer);
+      sliderTimer = setInterval(() => showSlide(slideIndex + 1), 6000);
+    }
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        showSlide(i);
+        startSlider();
+      });
+    });
+
+    renderProducts();
+    renderCart();
+    startSlider();
+  </script>
+</body>
+</html>
